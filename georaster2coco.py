@@ -351,10 +351,10 @@ if __name__ == '__main__':
     
     from tqdm import tqdm
     
-    img_root    = r'\\172.24.83.111\share2\dymwan\ARCHIVED\image'
-    poly_root   = r'\\172.24.83.111\share2\dymwan\ARCHIVED\field_polygon'
+    img_root    = r''
+    poly_root   = r''
 
-    train_c = geo2cocoConvertor(clip_size=512, clip_stride=None, dst_root=r'\\172.24.83.111\share2\dymwan\ARCHIVED\coco\val')
+    train_c = geo2cocoConvertor(clip_size=512, clip_stride=None, dst_root=r'')
 
     files = [e for e in os.listdir(img_root) if e.startswith('yn_gog2')]
     files = files[:200]
